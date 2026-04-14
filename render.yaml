@@ -2,21 +2,13 @@ services:
   - type: web
     name: video-uploader-bot
     runtime: python
-    repo: https://github.com/yourusername/video-uploader-bot
+    repo: https://github.com/HL-HACKER-TEAM/icf-video-hosting-bot
     plan: free
     region: singapore
     branch: main
     buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
     envVars:
-      - key: TG_BOT_TOKEN
-        value: 7753787415:AAFX02qLbMxkLKGX0KwhQ4N7jx_d3QK4dvw
-      - key: APP_ID
-        value: 37465864
-      - key: API_HASH
-        value: ede72ad9dcc688e9d98ed0a95dd49879
-      - key: AUTH_USERS
-        value: 6750330391
       - key: PYTHON_VERSION
         value: 3.11.0
       - key: TZ
